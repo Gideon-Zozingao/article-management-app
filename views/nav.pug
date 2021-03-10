@@ -1,0 +1,35 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a(href="/").navbar-brand Articles Connect
+    button(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler 
+        span.navbar-toggler-icon
+    div.collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.mr-auto
+            li.nav-item.active
+                a( href="/").nav-link Home 
+                span.sr-only(current)
+            
+            li.av-item
+            a(href="#").nav-linkLink
+            li.av-item.dropdown
+                Dropdown
+                a(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle#navbar Dropdown 
+                
+                div(aria-labelledby="navbarDropdown").dropdown-menu
+                    a(href="#").dropdown-item Action
+                    a(href="#").dropdown-item Another action
+                    div.dropdown-divider
+                    a(href="#").dropdown-item Something else here
+            
+            li.nav-item
+                a(href="#").nav-link.disabled Disabled
+            li.nav-item
+                a(href="/articles").nav-link Articles
+            li.nav-item
+                a(href="/about").nav-link About
+            li.nav-item
+                a(href="/userguide").nav-link user Guide       
+        
+        form().form-inline.my-2.my-lg-0
+            input(placeholder="Search" aria-label="Search"  type="search" ).form-control.mr-sm-2
+            button(type="submit").btn.btn-outline-success.my-2.my-sm-0 
+                span() Search

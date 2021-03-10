@@ -1,0 +1,21 @@
+include layout
+    title #{title}
+    body
+      include nav
+      .appheader
+          h1.header-tile.text-white Articles  Collection Network
+          h3.header-subtitle.text-white We are dedicated tyo collecting an Pubishisng interestin Articels arround the  world.
+      .container
+            h3.header-subtitle Add your ne articles arround here
+            form(method="post" action="add-new-article")
+              .form-group
+                  lable(for="aricle-title") Title
+                  input(type="text",placeholder="Article Title" name="aricle-title").form-control.form-control-lg#aricleTitle
+              .form-group
+                  lable(for="articleText") Article
+                  textarea(row="300" name="articleText").form-control#articleText
+              .form-group
+                button(type="submit").btn.btn-primary.btn-lg.btn-block Add
+              
+                
+          
